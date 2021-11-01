@@ -1,7 +1,7 @@
 footer {
   margin-top: 10vmax;
   padding: 2vmax;
-  background-color: #10847e;
+  background-color: rgb(34, 33, 33);
   color: white;
   display: flex;
   align-items: center;
@@ -32,14 +32,14 @@ footer {
 
 .midFooter {
   width: 60%;
-  margin-left: 300px;
+
   text-align: center;
 }
 
 .midFooter > h1 {
   font-size: 4vmax;
   font-family: "Roboto";
-  color: white;
+  color: #eb4034;
 }
 .midFooter > p {
   max-width: 60%;
