@@ -7,6 +7,8 @@ import { clearErrors, getProduct } from "../../actions/productAction";
 import { useSelector, useDispatch } from "react-redux";
 import Loader from "../layout/Loader/Loader";
 import { useAlert } from "react-alert";
+import logo from "./logo.PNG";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const alert = useAlert();
@@ -29,16 +31,25 @@ const Home = () => {
         <Fragment>
           <MetaData title="ECOMMERCE" />
 
+          <Link to="/">
+        <img className="header__logo" src={logo} />
+      </Link>
           <div className="banner">
-            <h1>Welcome to Medspace</h1>
-            <h1>FIND PRODUCTS BELOW</h1>
+            {/* <h1>Welcome to Medspace</h1> */}
+            {/* <h1>FIND PRODUCTS BELOW</h1> */}
 
-            <a href="#container">
+            {/* <a href="#container">
               <button>
                 Scroll <CgMouse />
               </button>
-            </a>
+            </a> */}
           </div>
+
+          <img
+          className="home__image"
+          src="https://cms-contents.pharmeasy.in/banner/afc7a916c23-02.jpg?dim=1440x0&dpr=1.25&q=100"
+          alt=""
+        />
 
           <h2 className="homeHeading">Featured Products</h2>
 
