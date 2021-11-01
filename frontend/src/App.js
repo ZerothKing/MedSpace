@@ -70,7 +70,6 @@ function App() {
 
   return (
     <Router>
-      <Header />
 
       {isAuthenticated && <UserOptions user={user} />}
 
@@ -81,7 +80,10 @@ function App() {
       )}
 
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" > 
+        <Header />
+        <Home/>
+        </Route>
         <Route exact path="/product/:id" component={ProductDetails} />
         <Route exact path="/products" component={Products} />
         <Route path="/products/:keyword" component={Products} />

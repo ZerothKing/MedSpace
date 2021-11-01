@@ -18,19 +18,18 @@ const About = () => {
           <div>
             <Avatar
               style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
-              src="https://res.cloudinary.com/tripleayt/image/upload/v1631555947/products/jpyibarlaxawvcvqjv5b.png"
+              // src="https://res.cloudinary.com/tripleayt/image/upload/v1631555947/products/jpyibarlaxawvcvqjv5b.png"
               alt="Founder"
             />
-            <Typography>Abhishek Singh</Typography>
-            <Button onClick={visitInstagram} color="primary">
+            <h1>Medspace</h1>
+            {/* <Button onClick={visitInstagram} color="primary">
               Visit Instagram
-            </Button>
+            </Button> */}
             <span>
-              This is a sample wesbite made by @meabhisingh. Only with the
-              purpose to teach MERN Stack on the channel 6 Pack Programmer
+            The objective of this project is to create an online pharmacy where consumers can purchase medicines and medical instruments. E-commerce websites like Amazon and Flipkart allow us to buy everyday goods and have them delivered directly to our doorstep, but websites that do the same for medicine are not as large or efficient. This mode of purchase was especially helpful during the pandemic when buying goods in person was simply not safe. This project aims to create a convenient platform so that buying medicines is more accessible. 
             </span>
           </div>
-          <div className="aboutSectionContainer2">
+          {/* <div className="aboutSectionContainer2">
             <Typography component="h2">Our Brands</Typography>
             <a
               href="https://www.youtube.com/channel/UCO7afj9AUo0zV69pqEYhcjw"
@@ -42,7 +41,7 @@ const About = () => {
             <a href="https://instagram.com/meabhisingh" target="blank">
               <InstagramIcon className="instagramSvgIcon" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
