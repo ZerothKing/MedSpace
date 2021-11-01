@@ -9,4 +9,7 @@ MedSpace is an E Commerce platform for users to purchase medicines, medical equi
 - Card Payment : Pay for products through credit card
 - Admin access : Manage products, deliveries and users
 
+##Note
+Create a config.env file in backend/config before running the server 
+
 This project was made for Software Engineering Lab CS 303 by @ZerothKing @pranavdv @mayank2714 @akash803
