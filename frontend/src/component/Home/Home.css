@@ -1,8 +1,8 @@
-.banner {
-  background-image: url("../../images/cover1.png");
+/* .banner {
+  background-image: url("https://cms-contents.pharmeasy.in/banner/afc7a916c23-02.jpg?dim=1440x0&dpr=1.25&q=100");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 100vmin;
   display: flex;
   flex-direction: column;
@@ -10,20 +10,30 @@
   align-items: center;
   justify-content: center;
   color: white;
+  margin-top: 20px;
+} */
+.header__logo {
+  margin-left: 650px;
+  width: 200px;
 }
-
-.banner > h1 {
+.home__image {
+  width: 100%;
+  z-index: -1;
+  margin-top: 50px;
+  margin-bottom: -150px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+/* .banner > h1 {
   margin: 5vmax;
   color: rgb(116, 7, 7);
-  /* font: 600 2.5vmax "Roboto"; */
 
-}
+} */
 
-.banner > p {
+/* .banner > p {
   font: 300 1.4vmax "Lucida Sans";
-}
+} */
 
-.banner > a > button {
+/* .banner > a > button {
   margin-bottom: 5vmax;
   cursor: pointer;
   background-color: white;
@@ -37,9 +47,9 @@
 .banner > a > button:hover {
   background-color: rgba(255, 255, 255, 0);
   color: rgb(8, 6, 6);
-}
+} */
 
-.banner::after {
+/* .banner::after {
   content: "";
   width: 100vw;
   height: 100vmin;
@@ -49,7 +59,7 @@
   left: 0;
   clip-path: polygon(100% 68%, 0 100%, 100% 100%);
   max-width: 100%;
-}
+} */
 
 .homeHeading {
   text-align: center;
@@ -107,7 +117,7 @@
 
 .productCard > span {
   margin: 0.5vmax;
-  color: tomato;
+  color: #10847e;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1vmax;
 }

@@ -6,7 +6,8 @@ describe ('Start e2e testing', () => {
       return false
     })
     cy.visit('/')
-    cy.contains('Scroll').click()
+    cy.get('.menuBurger').click()
+    cy.url().should('include', '/')
   })
 
   it('Register Test', () => {
@@ -39,10 +40,10 @@ describe ('Start e2e testing', () => {
     cy.visit('/login')
 
 
-    cy.get('input[name=loginEmail]').type(email).blur()
+    cy.get('.loginEmail > input').type(email).blur()
 
     // {enter} causes the form to submit
-    cy.get('input[name=loginPassword]').type(`${password}{enter}`)
+    cy.get('.loginPassword > input').type(`${password}{enter}`)
 
     // we should be redirected to /dashboard
     cy.url().should('include', '/account')
@@ -57,10 +58,10 @@ describe ('Start e2e testing', () => {
     cy.visit('/login')
 
 
-    cy.get('input[name=loginEmail]').type(email)
+    cy.get('.loginEmail > input').type(email)
 
     // {enter} causes the form to submit
-    cy.get('input[name=loginPassword]').type(`${password}{enter}`)
+    cy.get('.loginPassword > input').type(`${password}{enter}`)
 
     // we should be redirected to /dashboard
     cy.url().should('include', '/account')
@@ -77,10 +78,10 @@ describe ('Start e2e testing', () => {
     cy.visit('/login')
 
 
-    cy.get('input[name=loginEmail]').type(email)
+    cy.get('.loginEmail > input').type(email)
 
     // {enter} causes the form to submit
-    cy.get('input[name=loginPassword]').type(`${password}{enter}`)
+    cy.get('.loginPassword > input').type(`${password}{enter}`)
 
     // we should be redirected to /dashboard
     cy.url().should('include', '/account')
@@ -99,10 +100,10 @@ describe ('Start e2e testing', () => {
     cy.visit('/login')
 
 
-    cy.get('input[name=loginEmail]').type(email)
+    cy.get('.loginEmail > input').type(email)
 
     // {enter} causes the form to submit
-    cy.get('input[name=loginPassword]').type(`${password}{enter}`)
+    cy.get('.loginPassword > input').type(`${password}{enter}`)
 
     // we should be redirected to /dashboard
     cy.url().should('include', '/account')
@@ -123,10 +124,10 @@ describe ('Start e2e testing', () => {
     cy.visit('/login')
 
 
-    cy.get('input[name=loginEmail]').type(email)
+    cy.get('.loginEmail > input').type(email)
 
     // {enter} causes the form to submit
-    cy.get('input[name=loginPassword]').type(`${password}{enter}`)
+    cy.get('.loginPassword > input').type(`${password}{enter}`)
 
     // we should be redirected to /dashboard
     cy.url().should('include', '/account')
@@ -145,10 +146,10 @@ describe ('Start e2e testing', () => {
     cy.visit('/login')
 
 
-    cy.get('input[name=loginEmail]').type(email)
+    cy.get('.loginEmail > input').type(email)
 
     // {enter} causes the form to submit
-    cy.get('input[name=loginPassword]').type(`${password}{enter}`)
+    cy.get('.loginPassword > input').type(`${password}{enter}`)
 
     // we should be redirected to /dashboard
     cy.url().should('include', '/account')
@@ -173,10 +174,10 @@ describe ('Start e2e testing', () => {
     cy.visit('/login')
 
 
-    cy.get('input[name=loginEmail]').type(email)
+    cy.get('.loginEmail > input').type(email)
 
     // {enter} causes the form to submit
-    cy.get('input[name=loginPassword]').type(`${password}{enter}`)
+    cy.get('.loginPassword > input').type(`${password}{enter}`)
 
     // we should be redirected to /dashboard
     cy.url().should('include', '/account')
@@ -202,10 +203,10 @@ describe ('Start e2e testing', () => {
     cy.visit('/login')
 
 
-    cy.get('input[name=loginEmail]').type(email)
+    cy.get('.loginEmail > input').type(email)
 
     // {enter} causes the form to submit
-    cy.get('input[name=loginPassword]').type(`${password}{enter}`)
+    cy.get('.loginPassword > input').type(`${password}{enter}`)
 
     // we should be redirected to /dashboard
     cy.url().should('include', '/account')
