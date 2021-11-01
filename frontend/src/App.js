@@ -70,7 +70,7 @@ function App() {
 
   return (
     <Router>
-      <Header />
+
       {isAuthenticated && <UserOptions user={user} />}
 
       {stripeApiKey && (
@@ -81,9 +81,8 @@ function App() {
 
       <Switch>
         <Route exact path="/" > 
+        <Header />
         <Home/>
-        {/* <Header /> */}
-        
         </Route>
         <Route exact path="/product/:id" component={ProductDetails} />
         <Route exact path="/products" component={Products} />

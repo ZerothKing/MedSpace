@@ -1,12 +1,11 @@
 import React from "react";
 import { ReactNavbar } from "overlay-navbar";
-import logo from "../../../images/logo1.PNG";
+import logo from "../../../images/logo1.png";
 
 const options = {
   burgerColorHover: "#eb4034",
   logo,
   logoWidth: "20vmax",
-  logoTransition: 1.5,
   navColor1: "white",
   logoHoverSize: "10px",
   logoHoverColor: "#eb4034",
@@ -27,9 +26,9 @@ const options = {
   link1ColorHover: "#eb4034",
   link1Margin: "1vmax",
   profileIconUrl: "/login",
-  profileIconColor: "#10847e",
-  searchIconColor: "#10847e",
-  cartIconColor: "#10847e",
+  profileIconColor: "rgba(35, 35, 35,0.8)",
+  searchIconColor: "rgba(35, 35, 35,0.8)",
+  cartIconColor: "rgba(35, 35, 35,0.8)",
   profileIconColorHover: "#eb4034",
   searchIconColorHover: "#eb4034",
   cartIconColorHover: "#eb4034",
@@ -41,5 +40,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
