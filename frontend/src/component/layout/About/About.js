@@ -3,6 +3,7 @@ import "./aboutSection.css";
 import { Button, Typography, Avatar } from "@material-ui/core";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import InstagramIcon from "@material-ui/icons/Instagram";
+import logo from "../../../images/logo1.PNG";
 const About = () => {
   const visitInstagram = () => {
     window.location = "https://instagram.com/meabhisingh";
@@ -17,16 +18,16 @@ const About = () => {
         <div>
           <div>
             <Avatar
-              style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
-              // src="https://res.cloudinary.com/tripleayt/image/upload/v1631555947/products/jpyibarlaxawvcvqjv5b.png"
+              style={{ width: "13vmax", height: "12vmax", margin: "2vmax 0", borderRadius: "0px" }}
+              src={logo}
               alt="Founder"
             />
-            <h1>Medspace</h1>
+            
             {/* <Button onClick={visitInstagram} color="primary">
               Visit Instagram
             </Button> */}
             <span>
-            The objective of this project is to create an online pharmacy where consumers can purchase medicines and medical instruments. E-commerce websites like Amazon and Flipkart allow us to buy everyday goods and have them delivered directly to our doorstep, but websites that do the same for medicine are not as large or efficient. This mode of purchase was especially helpful during the pandemic when buying goods in person was simply not safe. This project aims to create a convenient platform so that buying medicines is more accessible. 
+            The objective of this project is to create an online pharmacy where consumers can purchase medicines and medical instruments. We have many E-commerce websites which  allow us to buy everyday goods and have them delivered directly to our doorstep, but websites that do the same for medicine are not as large or efficient. This mode of purchase was especially helpful during the pandemic when buying goods in person was simply not safe. This project aims to create a convenient platform so that buying medicines is more accessible. 
             </span>
           </div>
           {/* <div className="aboutSectionContainer2">

@@ -120,7 +120,6 @@ const LoginSignUp = ({ history, location }) => {
                   <input
                     type="email"
                     placeholder="Email"
-                    name="loginEmail"
                     required
                     value={loginEmail}
                     onChange={(e) => setLoginEmail(e.target.value)}
@@ -131,7 +130,6 @@ const LoginSignUp = ({ history, location }) => {
                   <input
                     type="password"
                     placeholder="Password"
-                    name="loginPassword"
                     required
                     value={loginPassword}
                     onChange={(e) => setLoginPassword(e.target.value)}
